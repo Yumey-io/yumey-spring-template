@@ -1,5 +1,5 @@
 <component name="ProjectRunConfigurationManager">
-  <configuration default="false" name="YumeySpringTemplateApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+  <configuration default="false" name="YumeySpringTemplate" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
     <option name="envFilePaths">
       <option value="$PROJECT_DIR$/.env" />
     </option>
@@ -8,7 +8,7 @@
     <selectedOptions>
       <option name="environmentVariables" />
     </selectedOptions>
-    <option name="SPRING_BOOT_MAIN_CLASS" value="io.yumey.YumeySpringTemplateApplication" />
+    <option name="SPRING_BOOT_MAIN_CLASS" value="io.yumey.YumeySpringTemplate" />
     <method v="2">
       <option name="Make" enabled="true" />
     </method>

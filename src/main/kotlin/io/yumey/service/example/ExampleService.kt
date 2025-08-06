@@ -1,4 +1,4 @@
-package io.yumey.service
+package io.yumey.service.example
 
 import io.yumey.entity.example.ExampleEntity
 import org.springframework.stereotype.Service

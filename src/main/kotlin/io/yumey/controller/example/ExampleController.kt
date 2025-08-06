@@ -1,9 +1,8 @@
 package io.yumey.controller.example
 
 import io.yumey.dto.example.ExampleDTO
-import io.yumey.entity.example.ExampleEntity
 import io.yumey.mapper.example.ExampleMapper
-import io.yumey.service.ExampleService
+import io.yumey.service.example.ExampleService
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.http.ResponseEntity
 import org.springframework.security.core.annotation.AuthenticationPrincipal

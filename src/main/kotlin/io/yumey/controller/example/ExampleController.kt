@@ -15,12 +15,19 @@ import org.springframework.web.bind.annotation.RestController
 @RequestMapping("/example")
 class ExampleController(
     @Autowired private val exampleService: ExampleService,
-    @Autowired private val exampleMapper: ExampleMapper
+    @Autowired private val exampleMapper: ExampleMapper,
 ) {
     @GetMapping
     fun getExample(
-        @AuthenticationPrincipal principal: OAuth2User
+        @AuthenticationPrincipal principal: OAuth2User,
     ): ResponseEntity<ExampleDTO> {
-        return ResponseEntity.ok(exampleMapper.entityToDto(exampleService.getExample(principal.name, principal.attributes)))
+        return ResponseEntity.ok(
+            exampleMapper.entityToDto(
+                exampleService.getExample(
+                    principal.name,
+                    principal.attributes
+                )
+            )
+        )
     }
 }

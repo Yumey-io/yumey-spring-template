@@ -1,15 +1,14 @@
 package io.yumey.config
 
+import jakarta.servlet.http.HttpServletRequest
+import jakarta.servlet.http.HttpServletResponse
 import org.springframework.context.annotation.Bean
 import org.springframework.context.annotation.Configuration
 import org.springframework.security.config.annotation.web.builders.HttpSecurity
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity
-import org.springframework.security.web.SecurityFilterChain
-import org.springframework.security.oauth2.client.web.OAuth2LoginAuthenticationFilter
-import org.springframework.security.web.authentication.AuthenticationSuccessHandler
 import org.springframework.security.core.Authentication
-import jakarta.servlet.http.HttpServletRequest
-import jakarta.servlet.http.HttpServletResponse
+import org.springframework.security.web.SecurityFilterChain
+import org.springframework.security.web.authentication.AuthenticationSuccessHandler
 
 @Configuration
 @EnableWebSecurity
@@ -45,7 +44,7 @@ class SecurityConfig {
             }
         return http.build()
     }
-    
+
     @Bean
     fun successHandler(): AuthenticationSuccessHandler {
         return AuthenticationSuccessHandler { _: HttpServletRequest, response: HttpServletResponse, _: Authentication ->

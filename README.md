@@ -4,7 +4,8 @@ A modern Spring Boot template with OAuth2 authentication using the Yumey identit
 
 ## 📋 Overview
 
-This template provides a quick start for building secure Spring Boot applications with Yumey authentication integration. It handles OAuth2 flows seamlessly and provides a solid foundation for your backend services.
+This template provides a quick start for building secure Spring Boot applications with Yumey authentication integration.
+It handles OAuth2 flows seamlessly and provides a solid foundation for your backend services.
 
 ## 🚀 Features
 
@@ -27,20 +28,20 @@ This template provides a quick start for building secure Spring Boot application
 1. **Clone the template** to your local development environment
 
 2. **Set up environment variables**:
-   - Copy `example.env` to `.env` file
-   - Update the variables with your Yumey client credentials:
-     ```
-     YUMEY_CLIENT_ID=<YOUR_CLIENT_ID>
-     YUMEY_CLIENT_SECRET=<YOUR_CLIENT_SECRET>
-     YUMEY_REDIRECT_URI=http://localhost:8080/oauth2/callback/yumey
-     YUMEY_ISSUER_URI=https://yumey-auth-server.vercel.app/
-     ```
+    - Copy `example.env` to `.env` file
+    - Update the variables with your Yumey client credentials:
+      ```
+      YUMEY_CLIENT_ID=<YOUR_CLIENT_ID>
+      YUMEY_CLIENT_SECRET=<YOUR_CLIENT_SECRET>
+      YUMEY_REDIRECT_URI=http://localhost:8080/oauth2/callback/yumey
+      YUMEY_ISSUER_URI=https://yumey-auth-server.vercel.app/
+      ```
 
 3. **Build the application**:
    ```bash
    ./gradlew build
    ```
-   
+
 4. **Run the application**:
    ```bash
    ./gradlew bootRun

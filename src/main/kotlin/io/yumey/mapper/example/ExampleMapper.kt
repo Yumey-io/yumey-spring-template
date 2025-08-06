@@ -11,7 +11,4 @@ interface ExampleMapper {
     @Mapping(source = "entity.age", target = "ageInDays")
     fun entityToDto(entity: ExampleEntity): ExampleDTO
 
-    @Mapping(source = "dto.ageInDays", target = "age")
-    fun dtoToEntity(dto: ExampleDTO): ExampleEntity
-
 }
